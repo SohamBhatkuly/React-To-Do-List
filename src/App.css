@@ -1,0 +1,74 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(170, 233, 239);
+}
+
+input {
+  border: none;
+  outline: none;
+}
+.input-container {
+  display: flex;
+  width: 90%;
+  gap: 3px;
+}
+
+.date-input {
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #37afd4;
+  border-radius: 0.5rem;
+  height: 3rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+}
+
+.text-input {
+  flex: 1;
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #37afd4;
+  border-radius: 0.5rem;
+  height: 3rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+}
+/* @media (max-width: 700px) {
+  .input-container {
+    width: 10rem;
+  }
+} */
+@media (max-width: 480px) {
+  button,
+  .date-input,
+  .text-input {
+    font-size: 1.2rem;
+    height: 40px;
+    padding: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .main-container {
+    width: 100%;
+  }
+}
+
+button {
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #37afd4;
+  border-radius: 0.5rem;
+  height: 3rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+}
