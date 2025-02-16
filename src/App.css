@@ -16,7 +16,7 @@ input {
 }
 .input-container {
   display: flex;
-  width: 90%;
+  width: 95%;
   gap: 3px;
 }
 
@@ -27,12 +27,14 @@ input {
   border: 1px solid #37afd4;
   border-radius: 0.5rem;
   height: 3rem;
-  font-family: "Space Grotesk", sans-serif;
   font-size: 2rem;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: white;
 }
 
 .text-input {
   flex: 1;
+  font-size: 2rem;
   padding: 5px;
   padding-top: 0;
   padding-bottom: 0;
@@ -40,15 +42,13 @@ input {
   border-radius: 0.5rem;
   height: 3rem;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 2rem;
 }
 /* @media (max-width: 700px) {
   .input-container {
     width: 10rem;
   }
 } */
-@media (max-width: 480px) {
-  button,
+@media (max-width: 500px) {
   .date-input,
   .text-input {
     font-size: 1.2rem;
@@ -71,4 +71,69 @@ button {
   height: 3rem;
   font-family: "Space Grotesk", sans-serif;
   font-size: 2rem;
+  background-color: white;
+}
+button {
+  appearance: none;
+}
+
+@media (max-width: 500px) {
+  button {
+    font-size: 1.2rem;
+    height: 51px;
+    padding: 5px;
+  }
+}
+.task-list{
+  margin-top: 4rem;
+  padding: 0;
+}
+.task-value {
+  height: 6rem;
+  margin-top: 0;
+  padding-top: 0;
+  /* border: 1px solid black; */
+  display: flex;
+  width: 95%;
+  gap: 3px;
+}
+
+.task-content {
+  background-color: white;
+  align-self: center;
+  display: flex;
+  flex: 1;
+  font-size: 2rem;
+  padding: 5px;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #37afd4;
+  border-radius: 0.5rem;
+  height: 4rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.task-date {
+  align-self: center;
+  background-color: white;
+  font-size: 2rem;
+  padding: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid #37afd4;
+  border-radius: 0.5rem;
+  height: 4rem;
+  align-content: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+.task-text {
+  flex: 1;
+  align-self: center;
+}
+
+.done {
+  height: 1.5rem;
+  width: 1.5rem;
+  align-self: center;
 }
