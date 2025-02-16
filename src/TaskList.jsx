@@ -11,7 +11,7 @@ export default function TaskList(props) {
                         <p className="task-text" key={index}>{e.text}</p>
                             <input type="checkbox" className='done' />
                     </div>
-                </div>// Access text and date
+                </div>
             ))}
         </div>
     );
